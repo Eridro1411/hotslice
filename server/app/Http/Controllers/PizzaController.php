@@ -25,7 +25,7 @@ class PizzaController extends Controller
         $pizza->price_pizza=$pizzaData->price_pizza;
         $pizza->dough_pizza=$pizzaData->dough_pizza;
         $pizza->allergens_pizza=$pizzaData->allergens_pizza;
-        $pizza->description=$pizzaData->description;
+        $pizza->description_pizza=$pizzaData->description_pizza;
 
         $pizza->save();
 
@@ -43,7 +43,7 @@ class PizzaController extends Controller
         $pizza->price_pizza=$pizzaData->price_pizza;
         $pizza->dough_pizza=$pizzaData->dough_pizza;
         $pizza->allergens_pizza=$pizzaData->allergens_pizza;
-        $pizza->description=$pizzaData->description;
+        $pizza->description_pizza=$pizzaData->description_pizza;
 
         $pizza->save();
 
