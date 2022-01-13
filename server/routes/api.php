@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PizzaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get("/list",[PizzaController::class,"list"]);
+Route::get("/detail/{id}",[PizzaController::class,"detail"]);
+Route::post("/create",[PizzaController::class,"create"]);
+Route::post("/edit/{id}",[PizzaController::class,"edit"]);
